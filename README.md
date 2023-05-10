@@ -15,7 +15,7 @@ Ide
     docker run -p 5436:5432 -e POSTGRES_PASSWORD=1234 postgres
  
 2. Como estamos usando um banco configurado em container no docker, precisamos acessar o Dbeaver e criar o DB customerdb conforme o nosso arquivo 
-application.properties.
+    application.properties.
 
 3. Agora que temos o banco rodando, podemo subir aplicação com o comando maven para iniciar aplicação com jdk normal, acesse o terminal da ide intellij e na pasta do projeto execute o comando abaixo:
 
@@ -32,4 +32,4 @@ application.properties.
     ./customer-1.0.0-SNAPSHOT-runner
 
 
-4. Após aplicação finalizar o build e esta com status de started, acessamos o link http://localhost:8080 e temos o swagger no endereço http://localhost:8080/q/swagger-ui/
+4. Após aplicação finalizar o build e esta com status de started, acessamos o link http://localhost:8080 e temos o swagger no endereço: http://localhost:8080/q/swagger-ui/
