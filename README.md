@@ -2,12 +2,16 @@
 repos do projeto microservice customer utilizando java_quarkus
 
 Configuração do projeto Customer
+
 Java 
     -jdk versão 11
     -quarkus versão 2.16.4
+    
 Docker
+
 Banco de dados
     -postgres v
+    
 Ide
     -intellij
 
