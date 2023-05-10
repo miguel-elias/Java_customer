@@ -23,14 +23,14 @@ Ide: intellij
     ./mvnw quarkus:dev
 
 
-3.1 Outra opção é subir aplicação com o Comando para Graalvm 
+    3.1 Outra opção é subir aplicação com o Comando para Graalvm 
 
-    mvn clean package -Pnative
+            mvn clean package -Pnative
 
 
-3.2 Acessar a pasta target e no terminal digitar o comando para iniciar aplicação
+    3.2 Acessar a pasta target e no terminal digitar o comando para iniciar aplicação
 
-    ./customer-1.0.0-SNAPSHOT-runner
+            ./customer-1.0.0-SNAPSHOT-runner
 
 
 4. Após aplicação finalizar o build e esta com status de started, acessamos o link http://localhost:8080 e temos o swagger no endereço: http://localhost:8080/q/swagger-ui/
