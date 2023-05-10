@@ -13,14 +13,15 @@ Ide: intellij
 
 1. Antes de mais nada, precisamos iniciar o banco de dados. para isso precisamos rodar o comando docker abaixo no terminal para o start do container que contem o banco postgres do projeto.
 
-    docker run -p 5436:5432 -e POSTGRES_PASSWORD=1234 postgres
+        docker run -p 5436:5432 -e POSTGRES_PASSWORD=1234 postgres
  
 2. Como estamos usando um banco configurado em container no docker, precisamos acessar o Dbeaver e criar o DB customerdb conforme o nosso arquivo 
-    application.properties.
+    
+        application.properties.
 
 3. Agora que temos o banco rodando, podemo subir aplicação com o comando maven para iniciar aplicação com jdk normal, acesse o terminal da ide intellij e na pasta do projeto execute o comando abaixo:
 
-    ./mvnw quarkus:dev
+        ./mvnw quarkus:dev
 
 
     3.1 Outra opção é subir aplicação com o Comando para Graalvm 
