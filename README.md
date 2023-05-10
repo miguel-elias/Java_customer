@@ -4,16 +4,21 @@ repos do projeto microservice customer utilizando java_quarkus
 Configuração do projeto Customer
 
 Java 
+    
     - jdk versão 11
+    
     - quarkus versão 2.16.4
     
 Docker
 
 Banco de dados
+    
     - postgres v
+    
     - dbeaver
     
 Ide
+    
     - intellij
 
 1. Antes de mais nada, precisamos iniciar o banco de dados. para isso precisamos rodar o comando docker abaixo no terminal para o start do container que contem o banco postgres do projeto.
