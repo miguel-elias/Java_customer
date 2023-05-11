@@ -18,8 +18,17 @@ public class CustomerController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<CustomerDto> findAllCustomer(){
+
         return customerService.findAllCustomers();
     }
+
+    @GET
+    @Path("/{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public CustomerDto findCustomerById(@PathParam("id") Long id) {
+        return customerService.getCustomerById(id);
+    }
+
     @POST
     @Transactional
     public Response saveCustomer(CustomerDto customerDto){

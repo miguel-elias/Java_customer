@@ -21,6 +21,10 @@ public class CustomerService {
 
     }
 
+    public CustomerDto getCustomerById(Long id) {
+        return mapCustomerEntityToDTO(customerRepository.findById(id));
+    }
+
     public void createNewCustomer(CustomerDto customerDto){
         customerRepository.persist(mapCustomerDtoToEntity(customerDto));
     }
